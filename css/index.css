@@ -1,0 +1,555 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ---------------reusable css  start ----------------- */
+
+.container {
+  width: 90%;
+  /* background-color: red; */
+  display: flex;
+}
+
+.container_center {
+  display: flex;
+  justify-content: center;
+}
+
+.padd {
+  padding: 20px;
+}
+
+.title {
+  font-family: segoe UI;
+  font-size: 40px;
+  font-weight: 400;
+  color: #f85d09;
+}
+
+/* -----------------------reusable css end-------- --------------- */
+
+.header {
+  width: 100%;
+  height: 100px;
+  /* background-color: rgba(0,0,0,.7); */
+  position: fixed;
+  z-index: 5;
+  transition: .4s;
+}
+
+.header_container {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  height: 100px;
+  color: white;
+  /* background-color: yellow; */
+  font-size: 40px;
+  font-family: segoe UI;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation {
+  height: 100px;
+  width: 30%;
+  /* background-color: blue; */
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  color: white;
+}
+
+.nav-link {
+  height: 100px;
+  width: 20%;
+  font-size: 17px;
+  font-family: segoe UI;
+  font-weight: bold;
+  /* color: white; */
+  line-height: 100px;
+  text-align: center;
+}
+
+/* ------------------- css for banner---------------------------- */
+
+.banner {
+  height: 85vh;
+  width: 100%;
+  background-color: gainsboro;
+  background-image: url("../media/image/banner.jpg");
+  background-size: cover;
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner_container {
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.banner_details {
+  height: 400px;
+  width: 45%;
+  /* background-color: white;  */
+}
+
+.banner_title {
+  font-size: 80px;
+  font-family: segoe UI;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-family: segoe UI;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  /* background-color:#f75d0ae8; */
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.cut {
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  background-color: #f85d09;
+  align-self: flex-start;
+  transform: rotate(30deg);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.cut:hover {
+  width: 100%;
+  transform: rotate(0deg);
+}
+
+/* -------------------------css for products ------------------------ */
+
+.products {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #e2dbdb;
+
+
+}
+
+.products_container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.products_section {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  column-gap: 4%;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.product {
+  width: 22%;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.product:nth-child(1) {
+  background-image: url('../media/image/product-1.jpg');
+}
+
+.product:nth-child(2) {
+  background-image: url('../media/image/product-2.jpg');
+}
+
+.product:nth-child(3) {
+  background-image: url('../media/image/product-3.jpg');
+}
+
+.product:nth-child(4) {
+  background-image: url('../media/image/product-4.jpg');
+}
+
+.product:nth-child(5) {
+  background-image: url('../media/image/product-5.jpg');
+}
+
+.product:nth-child(6) {
+  background-image: url('../media/image/product-6.jpg');
+}
+
+
+
+
+
+.details {
+  height: 170px;
+  /* padding-bottom: 5px; */
+  font-family: segoe UI;
+  /* background-color: rgba(255,255,255,.4); */
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  display: flex;
+  transition: .4s;
+}
+
+.details_container {
+  padding: 20px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: red; */
+
+}
+
+.details:hover {
+  height: 500px;
+}
+
+
+/* -----------------css for new product -----------------------------  */
+.new_products {
+  height: 90vh;
+  width: 100%;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  transition: .8s;
+}
+
+.remove_gall_1{
+  display: none;
+}
+
+.gallery_1 {
+  background-color: #83c75b;
+}
+
+.gallery_2 {
+  background-color: #eeaf45;
+  margin-left: 25%;
+}
+
+.gallery_3 {
+  background-color: #d89eff;
+  margin-left: 50%;
+}
+
+.gallery_4 {
+  background-color: #31acc4;
+  margin-left: 75%;
+}
+
+.gallery_4:hover {
+  margin-left: 0px;
+}
+
+.gallery_3:hover {
+  margin-left: 0px;
+}
+
+.gallery_3:hover~.gallery_4 {
+  margin-left: 100%;
+}
+
+.gallery_2:hover {
+  margin-left: 0px;
+}
+
+.gallery_2:hover~.gallery_3 {
+  margin-left: 100%;
+}
+
+.gallery_2:hover~.gallery_4 {
+  margin-left: 100%;
+}
+
+.gallery_1:hover~.gallery_2 {
+  margin-left: 100%;
+}
+
+.gallery_1:hover~.gallery_3 {
+  margin-left: 100%;
+}
+
+.gallery_1:hover~.gallery_4 {
+  margin-left: 100%;
+}
+
+.gall_image {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.gall_img {
+  height: 90%;
+}
+
+.gall_details {
+  width: 75%;
+  height: 100%;
+  /* background-color: white; */
+  font-family: segoe UI;
+  display: flex;
+  align-items: center;
+}
+
+.gall_padd {
+  padding: 70px;
+
+}
+
+.gall_title {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+
+.gall_btn {
+  background-color: #2f2629;
+  border: 1px solid #2f2629;
+
+}
+
+
+
+/* ---------------------- CSS FOR CONTACT SECTION -------------------------  */
+.contact {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.contact_container {
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form_container {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* background-color: red; */
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 80%;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.form_field {
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  font-family: segoe UI;
+  text-indent: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  outline: none;
+  transition: .4s;
+}
+
+.form_field:nth-child(4) {
+  height: 100px;
+  padding-top: 10px;
+}
+
+.form_field:focus {
+  box-shadow: 0px 0px 8px skyblue;
+}
+
+.contact_btn {
+  background-color: #4d4d4d;
+  margin-top: 0px;
+}
+
+
+/* ---------------------------css end for contact us --------------------  */
+
+
+
+/* ------------------------------- CSS FOR SUBSCRIBE SECTION ------------------------- */
+.subscribe {
+  width: 100%;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  background-color: red;
+  background-image: url('../media/image/banner-2.jpeg');
+  background-size: cover;
+  background-position: 0px -80px;
+  background-repeat: no-repeat;
+}
+
+.subscribe_container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.sub_title {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.sub_inp::placeholder {
+  color: white;
+}
+
+.sub_inp {
+  width: 70%;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  font-family: segoe UI;
+  font-size: 17px;
+  text-indent: 20px;
+  background-color: transparent;
+}
+
+.sub_inp:focus {
+  box-shadow: 0px 0px 10px pink;
+}
+
+.sub_btn {
+  margin-top: 30px;
+  /* color: black; */
+  color: white;
+  transition: .4s;
+
+
+}
+
+.sub_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ----------------------------------------CSS FOR LETTER END --------------------------------------------  */
+
+
+/* ---------------------------------------- CSS FOR FOOTER SECTION ----------------------------------------- */
+
+
+.footer {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #2f2f2f;
+
+}
+
+.footer_container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer_child {
+  width: 22%;
+  height: 300px;
+  /* background-color: red; */
+  font-size: 17px;
+  font-family: segoe UI;
+  color: white;
+}
+
+.footer_title {
+  font-size: 25px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.quick_link {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.quick_links {
+  list-style-type: none;
+
+}
+
+.social {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.blog_title {
+  margin-bottom: 10px;
+}
+
+.blog_btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: .4s;
+}
+
+.blog_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* ------------------------------CSS FOR COPYRIGHT ---------------------------------  */
+.copyright {
+  width: 100%;
+  height: auto;
+  background-color: #111111;
+  font-family: segoe UI;
+  text-align: center;
+  color: white;
+  line-height: 30px;
+}
